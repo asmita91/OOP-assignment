@@ -86,7 +86,9 @@ class TwoInputsAnother{
         int b=Integer.parseInt(JOptionPane.showInputDialog(null,"enter next number:"));
         int sum=a+b;
         int product=a*b;
-        double division=product/sum;
+        double casted_sum= (double) (sum);
+        double casted_product= (double) (product);
+        double division=casted_sum/casted_product;
         JOptionPane.showMessageDialog(null,"the sum is "+sum+" and the product is "+product);
         JOptionPane.showMessageDialog(null,"the value after division is:"+division);
     }

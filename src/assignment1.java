@@ -102,10 +102,12 @@ class TwoInputs{
         System.out.println("enter second num");
         int num2= scanner.nextInt();
         int sum=num1+num2;
+        System.out.println(sum);
         int product=num1*num2;
-        System.out.println("the sum is:"+sum);
-        System.out.println("the product is:"+product);
-        double division=(product/sum);
+        System.out.println(product);
+        double casted_sum= (double) (sum);
+        double casted_product= (double) (product);
+        double division=casted_sum/casted_product;
         System.out.println("the division of product with sum is:" +division);
     }
 }
@@ -254,3 +256,21 @@ class AreaOfRectangle{
         System.out.println("the area is:"+Area1);
     }
 }
+class Tried{
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner (System.in);
+        System.out.println("enter first num");
+        int num1= scanner.nextInt();
+        System.out.println("enter second num");
+        int num2= scanner.nextInt();
+        int sum=num1+num2;
+        System.out.println(sum);
+        int product=num1*num2;
+        System.out.println(product);
+        double casted_sum= (double) (sum);
+        double casted_product= (double) (product);
+        double division=casted_sum/casted_product;
+        System.out.println("the division of product with sum is:" +division);
+    }
+}
+
